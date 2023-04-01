@@ -5,7 +5,7 @@ const Header = () => {
     <>
       <div className="">
         <div className="wt-80 m-auto">
-          <div className="flex flex-col justify-center items-center gap-5 bg-yellow-500 py-8">
+          <div className="flex flex-col justify-center items-center gap-5 bg-yellow-400 py-8">
             <figure className="">
               <img
                 src="https://marketing.readwhere.com/epaper-logo/disha-daily-logo.png"
@@ -34,7 +34,7 @@ const Header = () => {
           <nav className="py-5 border-2 border-solid">
             <ul className="flex  ">
               <li className="flex-1">
-                <Link>Home</Link>
+                <Link to="/">Home</Link>
               </li>
               <li className="flex-1">
                 <Link>About</Link>
@@ -52,6 +52,9 @@ const Header = () => {
               </li>
               <li className="flex-1">
                 <Link>Upload</Link>
+              </li>
+              <li className="flex-1">
+                <Link to="/login">Login</Link>
               </li>
             </ul>
           </nav>
