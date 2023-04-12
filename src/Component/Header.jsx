@@ -1,6 +1,13 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import { ListState } from "./ListState";
 
 const Header = () => {
+  const [menuFlag, setMenuFlag] = useState(false);
+  const handleStateMenu = () => {
+    setMenuFlag((flag) => !flag);
+  };
+
   return (
     <>
       <div className="">
@@ -39,13 +46,29 @@ const Header = () => {
               <li className="flex-1">
                 <Link>About</Link>
               </li>
-              <li className="flex-1">
-                <Link className="flex items-center justify-center gap-1">
-                  <span>State</span>
-                  <span>
-                    <i className="fa-solid fa-angle-down"></i>
-                  </span>
-                </Link>
+              <li className="flex-1 relative ">
+                {menuFlag ? (
+                  <Link
+                    className="flex items-center justify-center gap-1"
+                    onClick={handleStateMenu}
+                  >
+                    <span>State</span>
+                    <span>
+                      <i className="fa-solid fa-angle-down"></i>
+                    </span>
+                  </Link>
+                ) : (
+                  <Link
+                    className="flex items-center justify-center gap-1"
+                    onClick={handleStateMenu}
+                  >
+                    <span>State</span>
+                    <span>
+                      <i className="fa-solid fa-angle-up"></i>
+                    </span>
+                  </Link>
+                )}
+                {menuFlag && <ListState />}
               </li>
               <li className="flex-1">
                 <Link>Contact</Link>

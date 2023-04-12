@@ -1,8 +1,4 @@
 const NotFound = () => {
-  return (
-    <>
-      <div></div>
-    </>
-  );
+  return <div>Dont have such page</div>;
 };
 export { NotFound };
