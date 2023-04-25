@@ -3,14 +3,13 @@ import React from "react";
 const ContactForm = () => {
   return (
     <div>
-      {" "}
       <form>
         <div className="my-8">
           <label
             htmlFor="fullname"
             className="block text-sm font-medium leading-6 text-gray-900 text-start"
           >
-            FullName
+            FullName*
           </label>
           <div className=" mt-2 rounded-md shadow-sm">
             <input
@@ -28,7 +27,7 @@ const ContactForm = () => {
             htmlFor="company"
             className="block text-sm font-medium leading-6 text-gray-900 text-start"
           >
-            Company
+            Company*
           </label>
           <div className=" mt-2 rounded-md shadow-sm">
             <input
@@ -46,7 +45,7 @@ const ContactForm = () => {
             htmlFor="email"
             className="block text-sm font-medium leading-6 text-gray-900 text-start"
           >
-            Email Id
+            Email Id*
           </label>
           <div className=" mt-2 rounded-md shadow-sm">
             <input
@@ -64,11 +63,13 @@ const ContactForm = () => {
             htmlFor="massage"
             className="block text-sm font-medium leading-6 text-gray-900 text-start"
           >
-            Message
+            Message*
           </label>
           <div className=" mt-2 rounded-md shadow-sm">
             <textarea
               required
+              cols="30"
+              rows="5"
               name="massage"
               id="massage"
               className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-cyan-600 sm:text-sm sm:leading-6"
@@ -76,8 +77,8 @@ const ContactForm = () => {
             />
           </div>
         </div>
-        <div className="bg-cyan-600 mt-9 p-4 rounded-md text-white text-lg">
-          <button>Submit</button>
+        <div className="bg-cyan-600 mt-9 p-3 rounded-md text-white text-lg">
+          <button type="submit">Submit</button>
         </div>
       </form>
     </div>
