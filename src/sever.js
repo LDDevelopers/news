@@ -11,6 +11,8 @@ import { PdfView } from "./Component/PdfView";
 import { Contact } from "./pages/Contact";
 import { Address } from "./Component/Address";
 import { ContactForm } from "./Component/ContactForm";
+import { AddressCard } from "./Component/AddressCard";
+import { AboutDetails } from "./Component/AboutDetails";
 export {
   PdfView,
   About,
@@ -25,4 +27,6 @@ export {
   Contact,
   Address,
   ContactForm,
+  AddressCard,
+  AboutDetails,
 };
