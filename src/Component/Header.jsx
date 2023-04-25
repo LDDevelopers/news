@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { ListState } from "./ListState";
 
 const Header = () => {
@@ -44,7 +44,7 @@ const Header = () => {
                 <Link to="/">Home</Link>
               </li>
               <li className="flex-1">
-                <Link>About</Link>
+                <NavLink to="about">About</NavLink>
               </li>
               <li className="flex-1 relative ">
                 {menuFlag ? (
@@ -71,13 +71,13 @@ const Header = () => {
                 {menuFlag && <ListState />}
               </li>
               <li className="flex-1">
-                <Link>Contact</Link>
+                <NavLink to="contact">Contact</NavLink>
               </li>
               <li className="flex-1">
-                <Link>Upload</Link>
+                <NavLink>Upload</NavLink>
               </li>
               <li className="flex-1">
-                <Link to="/login">Login</Link>
+                <NavLink to="/login">Login</NavLink>
               </li>
             </ul>
           </nav>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-function Home() {
+const Home = () => {
   return (
     <>
       <div className="m-x-6 ">
@@ -137,6 +137,6 @@ function Home() {
       </div>
     </>
   );
-}
+};
 
-export default Home;
+export { Home };
