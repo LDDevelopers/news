@@ -9,6 +9,8 @@ import { Login } from "./pages/Auth/Login";
 import { NotFound } from "./pages/NotFound";
 import { PdfView } from "./Component/PdfView";
 import { Contact } from "./pages/Contact";
+import { Address } from "./Component/Address";
+import { ContactForm } from "./Component/ContactForm";
 export {
   PdfView,
   About,
@@ -21,4 +23,6 @@ export {
   Login,
   NotFound,
   Contact,
+  Address,
+  ContactForm,
 };
