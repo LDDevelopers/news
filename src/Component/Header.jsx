@@ -14,11 +14,7 @@ const Header = () => {
         <div className="wt-80 m-auto">
           <div className="flex flex-col justify-center items-center gap-5 bg-yellow-400 py-8">
             <figure className="">
-              <img
-                src="https://marketing.readwhere.com/epaper-logo/disha-daily-logo.png"
-                alt=""
-                className="max-w-2xl"
-              />
+              <img src="naradha2.png" alt="" className="max-w-2xl" />
             </figure>
 
             <div className="">
