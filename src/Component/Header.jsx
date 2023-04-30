@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { ListState } from "./ListState";
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
 import { SideNav } from "./SideNav";
@@ -67,14 +67,14 @@ const Header = () => {
             </div>
             <ul className="md:flex  hidden">
               <li className="flex-1">
-                <Link to="/">Home</Link>
+                <NavLink to="/">Home</NavLink>
               </li>
               <li className="flex-1">
                 <NavLink to="about">About</NavLink>
               </li>
               <li className="flex-1 relative ">
                 {menuFlag ? (
-                  <Link
+                  <NavLink
                     className="flex items-center justify-center gap-1"
                     onClick={handleStateMenu}
                   >
@@ -82,9 +82,9 @@ const Header = () => {
                     <span>
                       <i className="fa-solid fa-angle-down"></i>
                     </span>
-                  </Link>
+                  </NavLink>
                 ) : (
-                  <Link
+                  <NavLink
                     className="flex items-center justify-center gap-1"
                     onClick={handleStateMenu}
                   >
@@ -92,7 +92,7 @@ const Header = () => {
                     <span>
                       <i className="fa-solid fa-angle-up"></i>
                     </span>
-                  </Link>
+                  </NavLink>
                 )}
                 {menuFlag && <ListState />}
               </li>

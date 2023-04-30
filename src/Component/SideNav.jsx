@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 const SideNav = () => {
   return (
     <>
-      <div className="absolute md:hidden bg-yellow-400 text-white top-20 right-0 left-0 p-5 z-40">
+      <div className="absolute md:hidden bg-yellow-400  text-white top-20 right-0 left-0 p-5 z-40  ">
         <nav>
           <ul className="flex flex-col gap-4 cursor-pointer font-bold text-sm">
             <NavLink to="/">
