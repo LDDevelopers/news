@@ -16,7 +16,7 @@ const Home = () => {
           </figure>
 
           <div>
-            <span>Ts Main</span>
+            <span>Ap Main</span>
           </div>
         </div>
         <div
@@ -30,7 +30,7 @@ const Home = () => {
           </figure>
 
           <div>
-            <span>Ts Main</span>
+            <span>Ap Main</span>
           </div>
         </div>
         <div
@@ -44,7 +44,7 @@ const Home = () => {
           </figure>
 
           <div>
-            <span>Ts Main</span>
+            <span>Ap Main</span>
           </div>
         </div>
         <div
@@ -58,7 +58,7 @@ const Home = () => {
           </figure>
 
           <div>
-            <span>Ts Main</span>
+            <span>Ap Main</span>
           </div>
         </div>
         <div
@@ -72,7 +72,7 @@ const Home = () => {
           </figure>
 
           <div>
-            <span>Ts Main</span>
+            <span>Ap Main</span>
           </div>
         </div>
         <div
@@ -86,7 +86,7 @@ const Home = () => {
           </figure>
 
           <div>
-            <span>Ts Main</span>
+            <span>Ap Main</span>
           </div>
         </div>
         <div
@@ -100,7 +100,7 @@ const Home = () => {
           </figure>
 
           <div>
-            <span>Ts Main</span>
+            <span>Ap Main</span>
           </div>
         </div>
         <div
@@ -114,7 +114,7 @@ const Home = () => {
           </figure>
 
           <div>
-            <span>Ts Main</span>
+            <span>Ap Main</span>
           </div>
         </div>
         <div
@@ -128,7 +128,7 @@ const Home = () => {
           </figure>
 
           <div>
-            <span>Ts Main</span>
+            <span>Ap Main</span>
           </div>
         </div>
       </section>

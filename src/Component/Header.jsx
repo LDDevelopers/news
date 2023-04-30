@@ -18,18 +18,18 @@ const Header = () => {
       <div className="">
         <div className="wt-80 m-auto">
           <div className="flex flex-col justify-center items-center gap-5 bg-yellow-400 py-5">
-            <figure className="p-7">
+            <figure className="">
               <NavLink to="/">
                 <img
                   src="naradha2.png"
                   alt=""
-                  className="max-w-xl object-cover w-full h-full"
+                  className="max-w-sm object-cover w-full h-full"
                 />
               </NavLink>
             </figure>
 
             <div className="">
-              <ul className="flex gap-5 md:gap-10 md:text-2xl p-7">
+              <ul className="flex gap-5 md:gap-10 md:text-lg p-7">
                 <li>
                   <i className="fa-brands fa-facebook"></i>
                 </li>
@@ -45,7 +45,7 @@ const Header = () => {
               </ul>
             </div>
           </div>
-          <nav className="py-5 border-2 border-solid">
+          <nav className="py-2 border-2 border-solid">
             <div className="w-full pr-8 text-3xl md:hidden flex justify-center relative">
               {sideFlag ? (
                 <button
@@ -65,7 +65,7 @@ const Header = () => {
 
               {sideFlag && <SideNav />}
             </div>
-            <ul className="md:flex  hidden">
+            <ul className="md:flex text-sm hidden">
               <li className="flex-1">
                 <NavLink to="/">Home</NavLink>
               </li>
@@ -98,9 +98,6 @@ const Header = () => {
               </li>
               <li className="flex-1">
                 <NavLink to="contact">Contact</NavLink>
-              </li>
-              <li className="flex-1">
-                <NavLink to="news">News</NavLink>
               </li>
               <li className="flex-1">
                 <NavLink to="/login">Login</NavLink>
