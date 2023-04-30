@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 const Home = () => {
   const navigate = useNavigate();
   return (
@@ -19,7 +19,12 @@ const Home = () => {
             <span>Ts Main</span>
           </div>
         </div>
-        <div className="mx-auto flex flex-col justify-center items-center max-w-md lg:col-span-1">
+        <div
+          onClick={() => {
+            navigate("news");
+          }}
+          className="mx-auto flex flex-col justify-center items-center max-w-md lg:col-span-1"
+        >
           <figure className="">
             <img src="/assests/newspaper.jpg" alt="" />
           </figure>
@@ -28,7 +33,12 @@ const Home = () => {
             <span>Ts Main</span>
           </div>
         </div>
-        <div className="mx-auto flex flex-col max-w-md lg:col-span-1">
+        <div
+          onClick={() => {
+            navigate("news");
+          }}
+          className="mx-auto flex flex-col max-w-md lg:col-span-1"
+        >
           <figure className="">
             <img src="/assests/newspaper.jpg" alt="" />
           </figure>
@@ -37,7 +47,12 @@ const Home = () => {
             <span>Ts Main</span>
           </div>
         </div>
-        <div className="mx-auto flex flex-col max-w-md lg:col-span-1">
+        <div
+          onClick={() => {
+            navigate("news");
+          }}
+          className="mx-auto flex flex-col max-w-md lg:col-span-1"
+        >
           <figure className="">
             <img src="/assests/newspaper.jpg" alt="" />
           </figure>
@@ -46,7 +61,12 @@ const Home = () => {
             <span>Ts Main</span>
           </div>
         </div>
-        <div className="mx-auto flex flex-col max-w-md lg:col-span-1">
+        <div
+          onClick={() => {
+            navigate("news");
+          }}
+          className="mx-auto flex flex-col max-w-md lg:col-span-1"
+        >
           <figure className="">
             <img src="/assests/newspaper.jpg" alt="" />
           </figure>
@@ -55,7 +75,12 @@ const Home = () => {
             <span>Ts Main</span>
           </div>
         </div>
-        <div className="mx-auto flex flex-col max-w-md lg:col-span-1">
+        <div
+          onClick={() => {
+            navigate("news");
+          }}
+          className="mx-auto flex flex-col max-w-md lg:col-span-1"
+        >
           <figure className="">
             <img src="/assests/newspaper.jpg" alt="" />
           </figure>
@@ -64,7 +89,12 @@ const Home = () => {
             <span>Ts Main</span>
           </div>
         </div>
-        <div className="mx-auto flex flex-col max-w-md lg:col-span-1">
+        <div
+          onClick={() => {
+            navigate("news");
+          }}
+          className="mx-auto flex flex-col max-w-md lg:col-span-1"
+        >
           <figure className="">
             <img src="/assests/newspaper.jpg" alt="" />
           </figure>
@@ -73,7 +103,12 @@ const Home = () => {
             <span>Ts Main</span>
           </div>
         </div>
-        <div className="mx-auto flex flex-col max-w-md lg:col-span-1">
+        <div
+          onClick={() => {
+            navigate("news");
+          }}
+          className="mx-auto flex flex-col max-w-md lg:col-span-1"
+        >
           <figure className="">
             <img src="/assests/newspaper.jpg" alt="" />
           </figure>
@@ -82,7 +117,12 @@ const Home = () => {
             <span>Ts Main</span>
           </div>
         </div>
-        <div className="mx-auto flex flex-col max-w-md lg:col-span-1">
+        <div
+          onClick={() => {
+            navigate("news");
+          }}
+          className="mx-auto flex flex-col max-w-md lg:col-span-1"
+        >
           <figure className="">
             <img src="/assests/newspaper.jpg" alt="" />
           </figure>

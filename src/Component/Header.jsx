@@ -74,7 +74,7 @@ const Header = () => {
               </li>
               <li className="flex-1 relative ">
                 {menuFlag ? (
-                  <NavLink
+                  <div
                     className="flex items-center justify-center gap-1"
                     onClick={handleStateMenu}
                   >
@@ -82,9 +82,9 @@ const Header = () => {
                     <span>
                       <i className="fa-solid fa-angle-down"></i>
                     </span>
-                  </NavLink>
+                  </div>
                 ) : (
-                  <NavLink
+                  <div
                     className="flex items-center justify-center gap-1"
                     onClick={handleStateMenu}
                   >
@@ -92,7 +92,7 @@ const Header = () => {
                     <span>
                       <i className="fa-solid fa-angle-up"></i>
                     </span>
-                  </NavLink>
+                  </div>
                 )}
                 {menuFlag && <ListState />}
               </li>
