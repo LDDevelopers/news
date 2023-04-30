@@ -4,7 +4,6 @@ import { SignUp } from "./pages/Auth/SignUp";
 import { Login } from "./pages/Auth/Login";
 import { NotFound } from "./pages/NotFound";
 import { Contact } from "./pages/Contact";
-import { Upload } from "./pages/Upload";
 import { HomeLayout } from "./Layout/HomeLayout";
 import { Footer } from "./Component/Footer";
 import { Header } from "./Component/Header";
