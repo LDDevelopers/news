@@ -1,14 +1,18 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { ListState } from "./ListState";
-import { RxHamburgerMenu } from "react-icons/rx";
+import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
+import { SideNav } from "./SideNav";
 
 const Header = () => {
   const [menuFlag, setMenuFlag] = useState(false);
+  const [sideFlag, setSideFlag] = useState(false);
   const handleStateMenu = () => {
     setMenuFlag((flag) => !flag);
   };
-
+  const handleSideNav = () => {
+    setSideFlag((flag) => !flag);
+  };
   return (
     <>
       <div className="">
@@ -42,10 +46,24 @@ const Header = () => {
             </div>
           </div>
           <nav className="py-5 border-2 border-solid">
-            <div className="w-full pr-8 text-3xl md:hidden flex justify-center">
-              <button className="flex justify-end ml-auto items-center">
-                <RxHamburgerMenu />
-              </button>
+            <div className="w-full pr-8 text-3xl md:hidden flex justify-center relative">
+              {sideFlag ? (
+                <button
+                  onClick={handleSideNav}
+                  className="flex justify-end ml-auto items-center rounded-md p-4 hover:border-2 focus:border-2"
+                >
+                  <RxCross1 />
+                </button>
+              ) : (
+                <button
+                  onClick={handleSideNav}
+                  className="flex justify-end ml-auto items-center rounded-md p-4 hover:border-2 focus:border-2"
+                >
+                  <RxHamburgerMenu />
+                </button>
+              )}
+
+              {sideFlag && <SideNav />}
             </div>
             <ul className="md:flex  hidden">
               <li className="flex-1">

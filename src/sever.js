@@ -14,8 +14,9 @@ import { Address } from "./Component/Address";
 import { ContactForm } from "./Component/ContactForm";
 import { AddressCard } from "./Component/AddressCard";
 import { AboutDetails } from "./Component/AboutDetails";
-
+import { SideNav } from "./Component/SideNav";
 export {
+  SideNav,
   PdfView,
   About,
   HomeLayout,
