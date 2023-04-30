@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { ListState } from "./ListState";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 const Header = () => {
   const [menuFlag, setMenuFlag] = useState(false);
@@ -13,14 +14,18 @@ const Header = () => {
       <div className="">
         <div className="wt-80 m-auto">
           <div className="flex flex-col justify-center items-center gap-5 bg-yellow-400 py-8">
-            <figure className="">
+            <figure className="p-7">
               <NavLink to="/">
-                <img src="naradha2.png" alt="" className="max-w-2xl" />
+                <img
+                  src="naradha2.png"
+                  alt=""
+                  className="max-w-xl object-cover w-full h-full"
+                />
               </NavLink>
             </figure>
 
             <div className="">
-              <ul className="flex gap-10 text-2xl">
+              <ul className="flex gap-5 md:gap-10 md:text-2xl p-7">
                 <li>
                   <i className="fa-brands fa-facebook"></i>
                 </li>
@@ -37,7 +42,12 @@ const Header = () => {
             </div>
           </div>
           <nav className="py-5 border-2 border-solid">
-            <ul className="flex  ">
+            <div className="w-full pr-8 text-3xl md:hidden flex justify-center">
+              <button className="flex justify-end ml-auto items-center">
+                <RxHamburgerMenu />
+              </button>
+            </div>
+            <ul className="md:flex  hidden">
               <li className="flex-1">
                 <Link to="/">Home</Link>
               </li>
@@ -72,7 +82,7 @@ const Header = () => {
                 <NavLink to="contact">Contact</NavLink>
               </li>
               <li className="flex-1">
-                <NavLink>Upload</NavLink>
+                <NavLink to="upload">Upload</NavLink>
               </li>
               <li className="flex-1">
                 <NavLink to="/login">Login</NavLink>

@@ -1,18 +1,20 @@
 import { About } from "./pages/About";
-import { HomeLayout } from "./Layout/HomeLayout";
 import { Home } from "./pages/Home";
-import { Footer } from "./Component/Footer";
-import { Header } from "./Component/Header";
-import { ListState } from "./Component/ListState";
 import { SignUp } from "./pages/Auth/SignUp";
 import { Login } from "./pages/Auth/Login";
 import { NotFound } from "./pages/NotFound";
-import { PdfView } from "./Component/PdfView";
 import { Contact } from "./pages/Contact";
+import { Upload } from "./pages/Upload";
+import { HomeLayout } from "./Layout/HomeLayout";
+import { Footer } from "./Component/Footer";
+import { Header } from "./Component/Header";
+import { ListState } from "./Component/ListState";
+import { PdfView } from "./Component/PdfView";
 import { Address } from "./Component/Address";
 import { ContactForm } from "./Component/ContactForm";
 import { AddressCard } from "./Component/AddressCard";
 import { AboutDetails } from "./Component/AboutDetails";
+
 export {
   PdfView,
   About,
@@ -29,4 +31,5 @@ export {
   ContactForm,
   AddressCard,
   AboutDetails,
+  Upload,
 };
