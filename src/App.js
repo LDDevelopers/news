@@ -11,9 +11,9 @@ import {
   Home,
   HomeLayout,
   Login,
+  News,
   NotFound,
   SignUp,
-  Upload,
 } from "./sever";
 
 const router = createBrowserRouter(
@@ -22,7 +22,7 @@ const router = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path="about" element={<About />} />
       <Route path="contact" element={<Contact />} />
-      <Route path="upload" element={<Upload />} />
+      <Route path="news" element={<News />} />
       <Route path="login" element={<Login />} />
       <Route path="signup" element={<SignUp />} />
       <Route path="*" element={<NotFound />} />

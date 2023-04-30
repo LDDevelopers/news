@@ -15,8 +15,8 @@ const SideNav = () => {
             <NavLink to="contact">
               <li className="hover:border-2 p-2">Contact</li>
             </NavLink>
-            <NavLink to="upload">
-              <li className="hover:border-2 p-2">Upload</li>
+            <NavLink to="news">
+              <li className="hover:border-2 p-2">News</li>
             </NavLink>
             <NavLink to="login">
               <li className="hover:border-2 p-2">Login</li>

@@ -17,7 +17,7 @@ const Header = () => {
     <>
       <div className="">
         <div className="wt-80 m-auto">
-          <div className="flex flex-col justify-center items-center gap-5 bg-yellow-400 py-8">
+          <div className="flex flex-col justify-center items-center gap-5 bg-yellow-400 py-5">
             <figure className="p-7">
               <NavLink to="/">
                 <img
@@ -100,7 +100,7 @@ const Header = () => {
                 <NavLink to="contact">Contact</NavLink>
               </li>
               <li className="flex-1">
-                <NavLink to="upload">Upload</NavLink>
+                <NavLink to="news">News</NavLink>
               </li>
               <li className="flex-1">
                 <NavLink to="/login">Login</NavLink>

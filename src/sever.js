@@ -15,7 +15,9 @@ import { ContactForm } from "./Component/ContactForm";
 import { AddressCard } from "./Component/AddressCard";
 import { AboutDetails } from "./Component/AboutDetails";
 import { SideNav } from "./Component/SideNav";
+import { News } from "./pages/News";
 export {
+  News,
   SideNav,
   PdfView,
   About,
@@ -32,5 +34,4 @@ export {
   ContactForm,
   AddressCard,
   AboutDetails,
-  Upload,
 };
